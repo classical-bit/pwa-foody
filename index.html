@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Foody</title>
+</head>
+<body>
+	<link rel="stylesheet" href="./css/style.css">
+	<div class="root-container">
+		<div class="header-container">
+		</div>
+		<div class="content-container">
+			<div class="dish-container"></div>
+			<div class="dish-container"></div>
+			<div class="dish-container"></div>
+			<div class="dish-container"></div>
+			<div class="dish-container"></div>
+			<div class="dish-container"></div>
+		</div>
+		<div class="footer-container">
+		</div>
+	</div>
+	<script type="text/javascript">
+		// If serviceWorker is supported then register it.
+		if('serviceWorker' in navigator){
+			navigator.serviceWorker.register('./service-worker.js', {scope: './'}) // Scope of serviceWorker
+				.then((registration) => {
+					console.log('service-worker registered!');
+				})
+				.catch((err) => {
+					console.log('could not register service-worker, ', err);
+				});
+		}else{
+			console.log('service-worker is not supported!');
+		}
+	</script>
+	<script src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "pwa-foody",
+  "version": "1.0.0",
+  "description": "progressive-web-app example",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -o -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/developerstogether/pwa-foody.git"
+  },
+  "keywords": [
+    "pwa",
+    "progressive",
+    "web",
+    "app"
+  ],
+  "author": "Deepanshu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/developerstogether/pwa-foody/issues"
+  },
+  "homepage": "https://github.com/developerstogether/pwa-foody#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
