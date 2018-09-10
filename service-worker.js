@@ -4,7 +4,8 @@ var cacheName = 'cache-v1'; // Cache name
 var filesToCache = [
 	'./index.html',
 	'./css/style.css',
-	'./js/index.js'
+	'./js/index.js',
+	'./favicon.png'
 ];
 
 // Install listener
